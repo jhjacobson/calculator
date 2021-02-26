@@ -1,0 +1,124 @@
+body,
+html {
+    height: 99%;
+    background-color: hsl(0, 0%, 16%);
+    display: grid;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "display display display display" "add subtract multiply divide" "seven eight nine equals" "four five six equals" "one two three clear-all" "zero zero decimal-point backspace";
+    margin: auto;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+    grid-template-columns: 10vw 10vw 10vw 10vw;
+    width: 40%;
+    border-width: 0.2vh;
+    border-style: solid;
+    border-color: black;
+    background-color: hsl(0, 0%, 87%);
+}
+
+#display {
+    grid-area: display;
+    border-width: 0.2vh;
+    border-style: solid;
+    border-color: black;
+    height: 70%;
+    width: 97%;
+    font-size: 4em;
+    text-align: right;
+}
+
+.operators {
+    background-color: hsl(310, 43%, 47%);
+}
+
+.clear {
+    background-color: hsl(50, 60%, 67%);
+}
+
+button {
+    height: 90%;
+    width: 90%;
+    font-weight: 600;
+    font-size: 4em;
+}
+
+.numbers,
+#decimal {
+    background-color: hsl(200, 75%, 73%);
+}
+
+#zero {
+    grid-area: zero;
+    width: 95%;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#add {
+    grid-area: add;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#subtract {
+    grid-area: subtract;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#equals {
+    grid-area: equals;
+    height: 95%;
+}
+
+#clear-all {
+    grid-area: clear-all;
+}
+
+#backspace {
+    grid-area: backspace;
+}
+
+#decimal-point {
+    grid-area: decimal-point;
+}
