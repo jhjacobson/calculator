@@ -10,22 +10,52 @@ main {
     grid-template-areas: "display display display display" "add subtract multiply divide" "seven eight nine equals" "four five six equals" "one two three clear-all" "zero zero decimal-point backspace";
     margin: auto;
     grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
-    grid-template-columns: 10vw 10vw 10vw 10vw;
-    width: 40%;
+    grid-template-columns: 7vw 7vw 7vw 7vw;
+    width: 28vw;
     border-width: 0.2vh;
     border-style: solid;
     border-color: black;
-    background-color: hsl(0, 0%, 87%);
+    background-color: hsl(0, 0%, 50%);
+    border-radius: 5px;
+}
+
+button {
+    height: 90%;
+    width: 90%;
+    font-weight: 600;
+    font-size: 4em;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: start;
+}
+
+@media screen and (max-width:600px) {
+    main {
+        display: grid;
+        grid-template-areas: "display display display display" "add subtract multiply divide" "seven eight nine equals" "four five six equals" "one two three clear-all" "zero zero decimal-point backspace";
+        margin: auto;
+        grid-template-rows: 15vh 15vh 15vh 15vh 15vh;
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+        width: 80vw;
+        border-width: 0.2vh;
+        border-style: solid;
+        border-color: black;
+        background-color: hsl(0, 0%, 50%);
+        border-radius: 5px;
+    }
 }
 
 #display {
     grid-area: display;
-    border-width: 0.2vh;
+    background-color: hsl(0, 0%, 87%);
+    border-width: 0.3vh;
     border-style: solid;
     border-color: black;
+    justify-self: center;
+    align-self: center;
     height: 70%;
-    width: 97%;
-    font-size: 4em;
+    width: 90%;
+    font-size: 4rem;
     text-align: right;
 }
 
@@ -37,13 +67,7 @@ main {
 
 .clear {
     background-color: hsl(50, 60%, 67%);
-}
-
-button {
-    height: 90%;
-    width: 90%;
-    font-weight: 600;
-    font-size: 4em;
+    font-size: 2rem;
 }
 
 .numbers,
